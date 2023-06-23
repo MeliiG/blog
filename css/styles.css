@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.clearfix{
+    float: none;
+    clear:both;
+}
+
+body{
+    background: url(../img/oceano.jpg);
+    background-attachment: fixed;
+}
+
+#global{
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    background: white ;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#logo{
+    font-family: Verdana,sans-serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+    line-height: 75px;
+    background-color: #23265e;
+    color: white;
+    text-align: center;
+    width: 385px;
+    height: 80px;
+    margin-bottom: 20px;
+    float: left;
+    text-transform: uppercase;
+}
+
+#menu{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+}
+
+#menu ul li{
+    height: 46px;
+    display: inline-block;
+    transition: all 300ms;
+}
+
+#menu ul li:hover{
+  background:#23265e ;  
+}
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
