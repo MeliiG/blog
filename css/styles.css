@@ -12,6 +12,8 @@
 body{
     background: url(../img/oceano.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #global{
@@ -173,6 +175,10 @@ footer {
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-top: 50px;
-	line-height: 47px;
+	line-height: 47px; 
     text-align: center;
+}
+
+.bx-wrapper, .bx-viewport{
+    height: 400px !important;
 }

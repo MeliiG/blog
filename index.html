@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- momentjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es.min.js"></script>
+    <!-- my scripts -->
+    <script src="js/main.js"></script>
+
+
 </head>
 <body>
     <section id="global">
@@ -29,31 +41,20 @@
         <!-- slider -->
         <div id="slider">
 
+            <div class="bxslider">
+                <div><img src="img/montaña.jpg" title="Montaña" /></div>
+                <div><img src="img/oceano.jpg" title="Oceano" /></div>
+                <div><img src="img/frio.jpg" title="Frio" /></div>
+              </div>
+
         </div>
 
         <!-- contenido -->
 
         <section id="content">
             <div id="posts">
-                <article class="post">
-                    <h2>Vida y más</h2>
-                    <span class="fecha">Fecha de publicacion</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate alias quasi repudiandae accusantium cupiditate impedit quae quam nemo culpa dolores saepe animi eligendi, error ea perferendis? Repellat, ipsa incidunt!
-                    Non temporibus commodi nisi porro cum, vitae quae aspernatur dolorem ad tempora dolore saepe, magni excepturi sapiente molestiae tenetur? Voluptas, ducimus. Voluptatem, soluta culpa! Laboriosam, sed eum? Dignissimos, eius magni!
-                    Neque quasi provident esse molestiae, itaque labore, minima at rerum tempore voluptatem quod aliquid similique facere libero? Eum nesciunt quasi atque ad iusto! Repudiandae reiciendis nobis quos, quidem quia tenetur!
-                    Delectus voluptatem quaerat obcaecati assumenda, eius dignissimos ipsa, eaque nemo velit, totam aut? Veniam alias incidunt in, nesciunt et, repudiandae obcaecati ea consequatur delectus placeat harum? Labore nihil ratione quae?</p>
-                    <a href="#" class="botonmas">leer más</a>
-                </article>
-
-                <article class="post">
-                    <h2>Beneficios </h2>
-                    <span class="fecha">Fecha de publicacion</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate alias quasi repudiandae accusantium cupiditate impedit quae quam nemo culpa dolores saepe animi eligendi, error ea perferendis? Repellat, ipsa incidunt!
-                    Non temporibus commodi nisi porro cum, vitae quae aspernatur dolorem ad tempora dolore saepe, magni excepturi sapiente molestiae tenetur? Voluptas, ducimus. Voluptatem, soluta culpa! Laboriosam, sed eum? Dignissimos, eius magni!
-                    Neque quasi provident esse molestiae, itaque labore, minima at rerum tempore voluptatem quod aliquid similique facere libero? Eum nesciunt quasi atque ad iusto! Repudiandae reiciendis nobis quos, quidem quia tenetur!
-                    Delectus voluptatem quaerat obcaecati assumenda, eius dignissimos ipsa, eaque nemo velit, totam aut? Veniam alias incidunt in, nesciunt et, repudiandae obcaecati ea consequatur delectus placeat harum? Labore nihil ratione quae?</p>
-                    <a href="#" class="botonmas">leer más</a>
-                </article>
+            
+                <!-- cargar posts desde json -->
 
             </div>
 
