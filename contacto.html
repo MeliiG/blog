@@ -6,14 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
     <link id="tema" rel="stylesheet" href="css/blue.css">
+ 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
+    <script src="js/jquery-ui/jquery-ui.min.js"></script>
     <!-- slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <!-- momentjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es.min.js"></script>
+    <script src="https://cdnjs.cloudflare.c om/ajax/libs/moment.js/2.29.4/locale/es.min.js"></script>
+        <!-- plugin validations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+
     <!-- my scripts -->
     <script src="js/main.js"></script>
 
@@ -47,23 +56,33 @@
             </nav>
         </header>
 
-        <!-- slider -->
-        <div id="slider">
-
-            <div class="bxslider">
-                <div><img src="img/montaña.jpg" title="Montaña" /></div>
-                <div><img src="img/oceano.jpg" title="Oceano" /></div>
-                <div><img src="img/frio.jpg" title="Frio" /></div>
-              </div>
-
-        </div>
+      
 
         <!-- contenido -->
 
         <section id="content">
-            <div id="posts">
-            
-                <!-- cargar posts desde json -->
+            <div id="box">
+                <h2>Contacto</h2>
+                <!-- cargar formulario -->
+                <form action="" method="POST" id="form_contact">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" data-validation="alphanumeric">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" data-validation="alphanumeric">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" data-validation="email">
+                    <label for="sexo">Sexo</label>
+                    <select name="sexo" id="" data-validation="required">
+                        <option value="men">Hombre</option>
+                        <option value="Woman">Mujer</option>
+                    </select>
+                    <label for="date">fecha de nacimiento</label>
+                    <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy"/>
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" data-validation="number">
+                    <input type="submit" value="Enviar">
+
+                </form>
 
             </div>
 

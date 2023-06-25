@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+
+    if(window.location.href.indexOf('index')>-1){
     // slider
     $('.bxslider').bxSlider({
         mode: 'fade',
@@ -7,7 +10,9 @@ $(document).ready(function(){
         Responsive: true,
         pager:false
     });
-    
+    }
+
+    if(window.location.href.indexOf('index')>-1){
     // posts
 
     var posts = [
@@ -53,7 +58,7 @@ $(document).ready(function(){
         $("#posts").append(post)
         console.log(post)
     })
-
+    }//index
     console.log(posts)
 
     // <article class="post">
@@ -79,7 +84,7 @@ $(document).ready(function(){
         thema.attr("href","css/blue.css")
     });
 
-
+    
 
 //scroll subir
 
@@ -116,4 +121,34 @@ if(form_name != null && form_name != "undefined"){
     });
 
 }
+
+    if(window.location.href.indexOf('sobremi')>-1){
+        $('#desplegable').accordion();
+
+    }
+
+    if(window.location.href.indexOf('reloj')>-1){
+
+        setInterval(function(){ //actualiza cada 1ms
+            var reloj = moment().format('h:mm:ss a');
+            $('#reloj').html(reloj);
+        },1000)
+        
+
+    }
+
+    //Validacion
+    if(window.location.href.indexOf('contact') > -1){
+	
+		$("form input[name='date']").datepicker({
+			dateFormat: 'dd-mm-yy'
+		});
+
+		$.validate({
+		    lang: 'es',
+		    errorMessagePosition: 'top',
+		    scrollToTopOnError: true
+		});
+
+	}
 })
