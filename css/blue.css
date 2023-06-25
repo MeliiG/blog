@@ -1,0 +1,25 @@
+body{
+    background: url(../img/frio.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#global{
+    background:#a1bfe2c4 ;
+}
+
+
+#logo{
+    background: #0468ff8c;
+}
+
+#menu ul li:hover{
+    background: #0468ff8c ;  
+  }
+
+.botonmas{
+
+    background-color: #0468ff8c ;
+    
+}

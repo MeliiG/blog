@@ -1,0 +1,28 @@
+
+body{
+    background: url(../img/montaña.jpg),;
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#global{
+    background:#cc8ab0cc ;
+}
+
+
+
+#logo{
+    background: #ff04968a;
+}
+
+#menu ul li:hover{
+    background: #ff04968a ;  
+  }
+
+.botonmas{
+
+    background-color: #ff04968a ;
+    
+}

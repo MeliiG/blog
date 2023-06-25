@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link id="tema" rel="stylesheet" href="css/blue.css">
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- slider -->
@@ -19,6 +20,14 @@
 
 </head>
 <body>
+
+    <div id="cambiotema">
+        <div id="topink"></div>
+        <div id="topurple"></div>
+        <div id="toblue"></div>
+    </div>
+
+
     <section id="global">
         <!-- cabecera -->
         <header>
@@ -72,15 +81,15 @@
                         <label for="name">
                             Nombre
                         </label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" id="form_name">
                         <label for="correo">
                             Correo
                         </label>
-                        <input type="email" name="correo">
+                        <input type="email" name="correo" >
                         <label for="pass">
                             Contraseña
                         </label>
-                        <input type="password" name="pass">
+                        <input type="password" name="pass" >
                         <input type="submit" value="Entrar">
                     </form>
                 </div>
@@ -94,6 +103,7 @@
 
     <footer>
         Proyecto-BlogJs &copy
+        <a href="#" class="subir">Subir</a>
     </footer>
 </body>
 </html>

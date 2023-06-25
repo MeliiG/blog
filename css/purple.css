@@ -1,0 +1,25 @@
+body{
+    background: url(../img/oceano.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#global{
+    background:#e2a1d9c4 ;
+}
+
+
+#logo{
+    background: #ea04ff8c;
+}
+
+#menu ul li:hover{
+    background: #ea04ff8c ;  
+  }
+
+.botonmas{
+
+    background-color: #ea04ff8c ;
+    
+}
